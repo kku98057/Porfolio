@@ -154,6 +154,7 @@
         width:60%;
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
     }
     .portfolio_text_bottom{
         margin-top:15px;
@@ -223,7 +224,7 @@
         top:0;
         left:0;
         background-color: #e0f6da;
-        width:55vw;
+        width:50vw;
         height:16px;
         z-index:-1
     }
@@ -241,27 +242,27 @@
 
     @keyframes html {
         0%{width:0;}
-        100%{width:52vw;}
+        100%{width:48vw;}
     }
     @keyframes css {
         0%{width:0;}
-        100%{width:52vw;}
+        100%{width:48vw;}
     }
     @keyframes jquery {
         0%{width:0;}
-        100%{width:30vw;}
+        100%{width:40vw;}
     }
     @keyframes javascript {
         0%{width:0;}
-        100%{width:23vw;}
+        100%{width:20vw;}
     }
     @keyframes ps {
         0%{width:0;}
-        100%{width:40vw;}
+        100%{width:35vw;}
     }
     @keyframes ai {
         0%{width:0;}
-        100%{width:40vw;}
+        100%{width:35vw;}
     }
     /* footer */
     .letter_wrap{
