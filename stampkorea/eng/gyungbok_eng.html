@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=566fb9d3d2f41cec64a34a55c7cfa36a"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/eng/index_eng.css">
+    <link rel="stylesheet" href="../css/eng/index_eng_tab.css">
+    <link rel="stylesheet" href="../css/eng/index_eng_mob.css">
+    <link rel="stylesheet" href="../css/eng/place_eng.css">
+    <link rel="stylesheet" href="../css/eng/place_eng_tab.css">
+    <link rel="stylesheet" href="../css/eng/place_eng_mob.css">
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/index.js"></script>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="nav_wrap">
+                <div class="top_nav">
+                    <div class="logo"><a href="../index.html"><img src="../img/stampkorea.png" alt=""></a></div>
+                </div>
+                <div class="bottom_nav">
+                    <ul class="menu_wrap">
+                        <li class="lang">
+                            <p>Language</p>
+                            <ul class="lang_wrap">
+                                <li class="kr"><a href="../kr/gyungbok_kr.html">Korean</a></li>
+                                <li class="eng"><a href="../eng/gyungbok_eng.html">English</a></li>
+                                <li class="cn"><a href="../cn/gyungbok_cn.html">Chinese</a></li> q
+                                <li class="jp"><a href="../jp/gyungbok_jp.html">Japanese</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">About</a></li>
+                        <li><a href="../eng/culture_eng.html">Culture</a></li>
+                        <li><a href="../eng/travel_eng.html">Travel</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Sign up</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn">
+                <img src="../img/mob_btn.png" alt="">
+            </div>
+            <div class="m_menu_wrap">
+                <div class="m_container">
+                    <div class="personal">
+                        <div class="login_wrap">
+                            <div class="img">
+                                <img src="../img/lantern-209877_1920.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="login">Login</p>
+                                <p class="logout">LogOut</p>
+                            </div>
+                        </div>
+                        <div class="bookmark_wrap">
+                            <div class="bookmark">
+                                <p>Bookmark</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="m_menu">
+                        <li class="m_lang_wrap">
+                            <p>EN</p>
+                            <ul class="m_lang">
+                                <li class="m_list kr"><a href="../kr/gyungbok_kr.html">Korean</a></li>
+                                <li class="m_list eng"><a href="../eng/gyungbok_eng.html">English</a></li>
+                                <li class="m_list cn"><a href="../cn/gyungbok_cn.html">Chinese</a></li>
+                                <li class="m_list jp"><a href="../jp/gyungbok_jp.html">Japanese</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">About</a></li>
+                        <li><a href="../eng/culture_eng.html">Culture</a></li>
+                        <li><a href="../eng/travel_eng.html">Travel</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="m_btn">
+                    <img src="../img/mob_close.png" alt="">
+                </div>
+            </div>
+            <div class="mob_fix_menu">
+                <div class="fix_travel fix_list">
+                    <a href="../eng/travel_eng.html">
+                        <img src="../img/air.png" alt="">
+                        <p>Travel</p>
+                    </a>
+                </div>
+                <div class="fix_home fix_list">
+                    <a href="../index.html">
+                        <img src="../img/home.png" alt="">
+                        <p>Home</p>
+                    </a>
+                </div>
+                <div class="fix_culture fix_list">
+                    <a href="../eng/culture_eng.html">
+                        <img src="../img/culture.png" alt="">
+                        <p>Culture</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section id="p_s1">
+            <div class="bg">
+                <div class="img"><img src="../img/seoul.jpg" alt=""></div>
+            </div>
+        </section>
+        <section id="p_s2">
+            <div class="container">
+                <div class="title">
+                    <h3>Seoul:<span>Gyungnok palace</span></h3>
+                    <div class="btn"><a href="">More in seoul</a></div>
+                </div>
+                <div class="data">
+                    <ul class="pic">
+                        <li><img src="../img/서울/경복궁.jpg" alt=""></li>
+                        <li><img src="../img/서울/경복궁향원정.jpg" alt=""></li>
+                        <li><img src="../img/서울/경복궁향원정겨울.jpg" alt=""></li>
+                        <li><img src="../img/서울/gyungbok/gyungbok_3.jpg" alt=""></li>
+                    </ul>
+                    <div class="map">
+                        <h3>MAP</h3>
+                        <div id="map">
+                            <script>
+                                var container = document.getElementById('map');
+                                var options = {
+                                    center: new kakao.maps.LatLng(33.450701, 126.570667),
+                                    level: 3
+                                };
+
+                                var map = new kakao.maps.Map(container, options);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="p_s3">
+            <div class="container">
+                <div class="left">
+                    <div class="title">
+                        <h3>What kind of place is this?</h3>
+                    </div>
+                    <div class="data">
+                        <ul>
+                            <li>
+                                <p>Gyeongbokgung Palace is a royal palace of the Joseon Dynasty located in Sejong-ro,
+                                    Seoul, South Korea. It is centered on near-static discharge. It was founded in 1395.
+                                    "Gyeongbok" is a word from the city government, meaning that it wishes the king, his
+                                    descendants and all the people to enjoy the great blessings of the peaceful era.</p>
+                            </li>
+                            <li>address : 161 Sajik-ro, Sejong-ro, Jongno-gu, Seoul</li>
+                            <li class="site"><strong> Web site :</strong> <a href="http://www.royalpalace.go.kr">http://www.royalpalace.go.kr/</a></li>
+                        </ul>
+                        <ul>
+                            <li class="strong"><strong>Business hours:</strong></li>
+                            <li>- Wednesday from 9:00 a.m. to 6:00 p.m.</li>
+                            <li>- Thursday from 9:00 a.m. to 6:00 p.m.</li>
+                            <li>- Friday, 9:00 a.m. to 6:00 p.m.</li>
+                            <li>- Saturday from 9:00 a.m. to 6:00 p.m.</li>
+                            <li>- Sunday from 9:00 a.m. to 6:00 p.m.</li>
+                            <li>- Monday from 9:00 a.m. to 6:00 p.m.</li>
+                            <li>- Tuesday closed</li>
+                        </ul>
+                        <ul>
+                            <li class="strong"><strong>announcement</strong></li>
+                            <li>- Attendee: 2,000 tickets per day (up to 4 tickets per person)</li>
+                            <li>- Internet Booking: 1,500 tickets (Naver Internet Booking Shortcuts)</li>
+                            <li>※ Internet Booking: 2020. 9. 15. (Tue) 14:00</li>
+                            <li>※ Reservation on the internet is not available on the day of viewing</li>
+                            <li>- On-site sales: 500 units (foreigners, only senior citizens aged 65 or older)</li>
+                            <li>- Admission fee: 3,000 won</li>
+                            <li>- <strong> tel :</strong> 02-3700-3900</li>
+                        </ul>
+                    </div>
+                    <div class="title_2">
+                        <h3>Course</h3>
+                        <div class="img">
+                            <img src="../img/서울/gyungbok/gyungbok_guide.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class="sidebar">
+                        <li class="title">
+                            <h3>More place</h3>
+                            <div class="btn"><a href=""><p>More</p></a></div>
+                        </li>
+                        <li><a href="">
+                                <div class="img">
+                                    <img src="../img/경상도/경남/전주/전주한옥.jpg" alt="">
+                                </div>
+                                <div class="data_wrap">
+                                    <div class="data">
+                                        <span>JeonJu</span>
+                                        <h3>Hanok Village</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <div class="img">
+                                    <img src="../img/대구/대구힐크레스트.jpg" alt="">
+                                </div>
+                                <div class="data_wrap">
+                                    <div class="data">
+                                        <span>DaeGu</span>
+                                        <h3>Hillcrest</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <div class="img">
+                                    <img src="../img/수원/수원화성.jpg" alt="">
+                                </div>
+                                <div class="data_wrap">
+                                    <div class="data">
+                                        <span>SuWon</span>
+                                        <h3>Hwasung</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <div class="img">
+                                    <img src="../img/부산/haeundae/해운대해수욕장.jpg" alt="">
+                                </div>
+                                <div class="data_wrap">
+                                    <div class="data">
+                                        <span>Busan</span>
+                                        <h3>Haeundae</h3>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="p_s4">
+            <div class="container">
+                <div id="disqus_thread"></div>
+            </div>
+            <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://stampkoreatest-2-disqus-com.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
+        </section>
+        <script id="dsq-count-scr" src="//stampkoreatest-2-disqus-com.disqus.com/count.js" async></script>
+    </div>
+</body>
+
+</html>

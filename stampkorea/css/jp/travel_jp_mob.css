@@ -1,0 +1,94 @@
+@media all and (max-width:768px){
+    
+
+    /* mob_fix*/
+    .mob_fix_menu{width:100%;height:80px;background-color:#24a49e;display: flex;position: fixed;bottom:0;}
+    .mob_fix_menu .fix_list{padding:20px 50px;margin-right:5%;}
+    .mob_fix_menu .fix_list:last-child{margin-right:0;}
+
+    #t_s1{height:700px;}
+    #t_s1 .bg{background: url(../../img/travel_bg.jpg) no-repeat center;background-size: cover; width:100%;height:100%;}
+    #t_s1 .bg .title{width:400px;height:150px;position: absolute; top:100px;left:50%; margin-left:-200px;/* background-color: green; */text-align: center;}
+    #t_s1 .bg .title h3{font-size:2.5rem; letter-spacing: -1px; color:white;}
+    #t_s1 .bg .title h3:last-child{color:gray;}
+    
+    
+    /* s2 영역 */
+    
+    #t_s2{/* background-color: blueviolet; */ height:700px; margin:100px 0;}
+    #t_s2 .container{width:100%;height:550px; /* background-color: gray; */ margin:0 auto;}
+    #t_s2 .container .slide_container{width:100%; margin:0 auto;/* background-color: chocolate; */position: relative;}
+    
+    #t_s2 .container .title_wrap{width:100%; height:100px;}
+    #t_s2 .container .title_wrap h3{width:100%;font-size:2rem; border-bottom:3px solid black; margin-bottom:5px;height:50px;}
+    #t_s2 .container .title_wrap p{font-size:1rem;}
+    
+    #t_s2 .container .slide_container .data{/* background-color: brown; */ width:100%; height:auto;position: relative;display: grid; grid-template: repeat(3,1fr)/repeat(2,1fr);grid-gap:5px;}
+    #t_s2 .container .slide_container .data li{position: relative;height:200px;}
+    #t_s2 .container .slide_container .data li a:after{content: '';display: block;width:100%;height:100%;position: absolute;top:0;z-index: 5;}
+    #t_s2 .container .slide_container .data li .img{width:100%;height:100%;}
+    
+    #t_s2 .container .slide_container .meta_data_wrap{background-color:rgba(0,0,0,0.7); width:100%; height:50px;position:absolute; top:0; left:0; color:white;}
+    #t_s2 .container .slide_container .meta_data_wrap .meta_data{text-align: center; position: relative; top:5px; padding:0 20px;}
+    
+    #t_s2 .container .slide_container .meta_data_wrap .meta_data h3{color:#9c6a27}
+    #t_s2 .container .slide_container .meta_data_wrap .meta_data p{margin-bottom:20px;display: none;}
+    
+    #t_s2 .container .btn{width:50px; height:50px;position: absolute; top:50%; margin-top:-25px;display: none;}
+    #t_s2 .container .btn img{width:50%;height:50%; margin-top:12.5px; margin-left:12.5px;position: relative;z-index:3;}
+    #t_s2 .container .btn .white{width:50%;height:50%; margin-top:12.5px; margin-left:12.5px;position: absolute; top:0;z-index:3;}
+    #t_s2 .container .btn .circle{width:50px; height:50px;background-color:rgba(0,0,0,0.1); border-radius: 50%;position: absolute;top:0; transform: scale(0); transition-duration:0.2s;}
+    #t_s2 .container #right{right:0;}
+    #t_s2 .container #left{left:0;}
+        /* 호버 */
+    
+    
+    
+    
+    
+    /* s3 영역 */
+    
+    #t_s3{height:800px;/*  background-color: crimson; */}
+    #t_s3 .container{width:100%; height:700px; margin:0 auto; /* background-color: gray; */}
+    #t_s3 .container .title_wrap{width:100%; height:100px;}
+    #t_s3 .container .title_wrap h3{font-size:2rem;width:100%; border-bottom:3px solid black; margin-bottom:5px;height:50px;}
+    #t_s3 .container .title_wrap p{width:100%;font-size:1rem;}
+    
+    #t_s3 .container .flex_wrap{width:100%; height:680px; /* background-color: cyan;  */display: flex; flex-wrap: wrap;}
+    #t_s3 .container .flex_wrap li{width:50%; height:225px;/* background-color: darkblue; */position: relative; box-shadow:0px 5px 5px 0px rgba(0,0,0,0.8);margin-bottom:10px;}
+    #t_s3 .container .flex_wrap li:nth-child(3){margin-right:0;}
+    #t_s3 .container .flex_wrap li a .data_wrap{width:28.571%;height:225px;position:absolute;top:0;}
+    #t_s3 .container .flex_wrap li a .img{width:100%;height:100%;}
+    
+    #t_s3 .container .flex_wrap li a .data_wrap {width:100%;height:225px;}
+    #t_s3 .container .flex_wrap li a .data_wrap .top{width:100%;height:60px;background-color: rgba(0,0,0,0.7);color:white;transition-duration: 0.3s;overflow: hidden;}
+    #t_s3 .container .flex_wrap li a .data_wrap .top p{font-size:1.2rem;font-weight: 900;line-height: 50px; text-align: center;} 
+    #t_s3 .container .flex_wrap li a .data_wrap .bottom{display: none; width:100%;height:60px;background-color:rgba(0,0,0,0.7);position: absolute; left:0;bottom:0px;color:white;text-align: center; transition-duration: 0.3s;overflow: hidden;}
+    #t_s3 .container .flex_wrap li a .data_wrap .bottom .data{width:180px;height:0px;/* background-color: goldenrod; */margin:10px auto 0 auto;}
+    #t_s3 .container .flex_wrap li a .data_wrap .bottom .data h3{margin-bottom:10px;}
+        /* 호버 */
+
+    
+    /* s4 영역 */
+    
+    #t_s4{height:auto;padding:50px 0 120px 0; /* background-color: goldenrod; */}
+    #t_s4 .container{width:100%; height:auto;/* background-color: gray;  */margin:0 auto;}
+    #t_s4 .container .title_wrap{width:100%; height:100px;}
+    #t_s4 .container .title_wrap h3{font-size:2rem; border-bottom:3px solid black;width:100%; margin-bottom:5px;height:50px;}
+    #t_s4 .container .title_wrap p{font-size:1rem;}
+    #t_s4 .container .flex_wrap{width:100%; height:480px; /* background-color: cyan; */ display: flex; flex-wrap: wrap; overflow: hidden;}
+    #t_s4 .container .flex_wrap li{width:48%; height:225px; background-color: darkblue;position: relative;margin-bottom:25px; box-shadow:0px 5px 5px 0px rgba(0,0,0,0.8);margin:9px auto;}
+    
+    #t_s4 .container .flex_wrap li .data_wrap{width:100%;height:50px;position:absolute;top:0;background-color:rgba(0,0,0,0.7); transition-duration: 0.5s;}
+    #t_s4 .container .flex_wrap li .img{width:100%;height:100%;}
+    #t_s4 .container .flex_wrap li .data_wrap .data{text-align: center; position: relative;top:5px;padding:0 20px;color:white;}
+    #t_s4 .container .flex_wrap li .data_wrap .data h3{color:#9c6a27}
+    #t_s4 .container .flex_wrap li .data_wrap .data p{margin-bottom:20px;display: none;}
+    #t_s4 .container .flex_wrap li a:after{content: '';display: block;width:100%;height:100%;position: absolute;top:0;z-index: 5;}
+    #t_s4 .container .btn{width:120px;height:50px;padding:0 30px; border-radius: 20px;background-color:#999; display: flex; justify-content: space-between; margin:25px auto 0 auto;align-items: center; }
+    #t_s4 .container .btn  h3{color:white;}
+    #t_s4 .container .btn > .img{width:17px;height:17px; transition-duration: 0.3s;}
+    /* addclass */
+    #t_s4 .container .close{display: none;}
+
+}

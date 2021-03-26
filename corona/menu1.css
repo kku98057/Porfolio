@@ -1,0 +1,74 @@
+html{min-width:1200px;}
+body{padding:0;margin:0;background-color:#4788e1; font-family:'Roboto',sans-serif;}
+li{list-style: none;}
+a{text-decoration: none; color:black;}
+*{box-sizing:border-box;}
+
+
+/* pg1 */
+.background{margin:auto; margin-top:20px; background-color: white; max-width:1200px;}
+.pg1{display:flex;flex-direction: row; justify-content: space-between;align-items: center;padding:20px 40px 0 40px;}
+.logo>img{width:130px; height:90px;}
+.pg1_1pg{display:flex;align-items: center;}
+.slogan{font-size:30px; color:#072f6a;font-weight: bolder;}
+.slogan2{font-size:30px;color:#114dc7;font-weight: bolder;}
+.homepage{color:white;border-radius:5px; font-weight: bolder; background-color:#0066cc;padding:10px 50px 10px 50px;}
+/* pg2 */
+.pg2{display:flex; flex-direction:column; background-color:#eeeeee; margin:0 40px 0 40px; border-radius:15px; box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.2); }
+
+/* pg2_1pg */
+.pg2_1pg{text-align: center; padding-top:50px; font-size:40px;}
+.pg2_1pg_P1{color:#0056a3; font-weight: bolder;}
+.pg2_1pg_P2{font-size:20px; font-weight:500; padding-top:20px;}
+/* pg2_2pg */
+.pg2_2pgct_flex{display:flex;}
+.pg2_2pg{padding:50px 30px 50px 30px;}
+.pg2_2pgct{border-radius: 10px; width:500px; height:300px; background-color: #072f6a; box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.2);}
+.pg2_2pgct_p{background-color:#1d51a0; padding:10px 100px 10px 100px; text-align: center; font-size: 25px; color:white; border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.pg2_2pg2ct{padding:30px; display:flex; }
+.number{color:white; font-size: 60px; font-weight: bolder;}
+.person{color:white;}
+.spnumber{color:yellow; font-weight: bolder;}
+.state{color:#86b9ff; font-size:25px; text-align: center; padding:10px 0 30px 0;}
+.pg2_2pg2ct{display:flex; justify-content:space-between; padding:60px}
+.pg2_2pg2ct_common{border-right:1px dotted white; padding-right:30px;}
+
+/* pg2_3pg */
+.pg2_3pgct_flex{display:flex;}
+.pg2_3pg{padding:50px 30px 50px 30px;}
+.pg2_3pgct{margin-left: 50px;border-radius: 10px; width:500px; height:300px; background-color: #07847e; box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.2);}
+.pg2_3pgct_p{background-color:#10a7a0; padding:10px 100px 10px 100px; text-align: center; font-size: 25px; color:white; border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.pg2_3pg2ct{padding:30px; display:flex; }
+.number2{color:white; font-size: 60px; font-weight: bolder; margin-left:20px;}
+.person{color:white;}
+.spnumber{color:yellow; font-weight: bolder;}
+.state2{color:#89ffe4; font-size:25px; text-align: center; padding:10px 0 30px 0;}
+.pg2_3pg2ct{display:flex; justify-content:space-between; padding:50px}
+.pg2_3pg2ct_common{border-right:1px dotted white; padding-right:50px;}
+
+/* pg2_4pg */
+.pg2_4pg{padding:20px 200px 20px 200px; background-color:#585e67; border-radius: 10px; font-size:20px; text-align: center; color:white;font-weight: bolder; margin:0 30px 50px 30px;}
+.pg2_4pgimg{width:20px; height:20px;}
+
+/* pg3 */
+.pg3{margin:50px 0;font-weight: bolder;}
+.pg3>ul{padding:0;margin:5px;}
+.pg3_flex{display:flex;justify-content:center;}
+.pg3_item{background-color:#1d51a0; padding:15px 0 15px 0; text-align:center; width:270px;text-align: center; color:white; border-radius: 10px; margin-left:5px;}
+.pg3_item2{background-color:#10a7a0; ; text-align: center; width:270px;padding:15px 0 15px 0;text-align: center; color:white; border-radius: 10px;margin-left:5px;}
+
+/* pg4 */
+.pg4{padding:0 50px 30px 50px;;}
+.pg4_1pg{color:#003e77; font-size:30px; font-weight: bolder;}
+/* pg4_pg */
+.pg4_12pg_flex{display:flex; flex-direction: column; border:2px solid #003e77; margin-top:30px;}
+.pg4_12pgct_n12{background-color:#003e77; color:white; font-size:24px; width:100%; padding:15px 0 15px 10px;}
+.pg4_12pg2ct{margin-bottom:40px;}
+.pg4_12pg2ct_title{color:#003e77; padding:10px 0px 0 18px;}
+.pg4_12pg3ct_box{width:100%; height:100%; background-color:#003e77; font-size:17px; color:white; padding:3px;}
+.pg4_12pg3ct_p{margin:10px 0 0 20px;}
+
+.pg4_11pg{border:2px solid #003e77; margin-top:30px;}
+.pg4_12pgct_n11{background-color:#003e77; color:white; font-size:24px; width:100%; padding:15px 0 15px 10px;}
+.pg4_12pgct_p{margin:30px 0 30px 20px;}
+.pg4_11pg_finish{color:yellow}
