@@ -76,7 +76,7 @@
     .intro_img{
         position: relative;
         top:15px;
-        width:82.474%;
+        width:93%;
         margin:0 auto;
     }
     .hello_img{
@@ -89,7 +89,7 @@
     .intro_text{
         position:relative;
         background-color: #87a380;
-        padding:15px;
+        padding:15px 3.092%;
         z-index: -1;
     }
     .intro_text:after{
@@ -106,15 +106,20 @@
     }
     .text{
         display: flex;
+        
     }
+    .left_text{
+        width:30%;
+    }
+
     .text li{
-        margin:0 90px 15px 0;
+        margin:0 18.595% 15px 0;
         color:white;
         font-size: 0.9rem;
     }
     /* s2 */
     .portfolio_wrap{
-        padding:0 15px;
+        padding:0 3.092%;
         
     }
     .portfolio_list:after{
@@ -133,7 +138,7 @@
         position: relative;
     }
     .portfolio_text{
-        padding:15px;
+        padding:15px 3.092%;
     }
     .portfolio_text_top{
         display: flex;
@@ -143,10 +148,12 @@
     .portfolio_text_top li{
         font-size:0.8rem;
         color:#c9c9c9;
-        margin-right:5px;
+        margin-right:2%;
     }
     .stack_list{
+        width:60%;
         display: flex;
+        justify-content: flex-end;
     }
     .portfolio_text_bottom{
         margin-top:15px;
@@ -154,7 +161,7 @@
     }
     /* s3 */
     .persnality_wrap{
-        padding:0 15px;
+        padding:0 3.092%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
