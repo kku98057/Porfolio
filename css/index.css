@@ -375,6 +375,24 @@
         height:35px;
         background-color: gray;
     }
+    .letter_click{
+        position: absolute;
+        top:5px;
+        left:44.5px;
+        animation:letterclick 0.5s infinite;
+    }
+
+    @keyframes letterclick {
+        0%{
+            color:#f87272;
+        }
+        50%{
+            color:#daba63;
+        }
+        100%{
+            color:#f87272;
+        }
+    }
 
 
 
