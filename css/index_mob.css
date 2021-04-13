@@ -1,5 +1,8 @@
 @media all and (max-width:860px){
     /* 공통 */
+    object{
+        display: none;
+    }
     body{
         font-family: 'Noto Sans KR', sans-serif;
     }
@@ -11,7 +14,6 @@
         align-items: center;
         justify-content: center;
         margin:15px 0;
-    
     }
     .container{
         width:92.381%;
@@ -238,6 +240,7 @@
     .jquery_bar_active{animation: jquery 1s forwards;}
     .ps_bar_active{animation: ps 1s forwards;}
     .ai_bar_active{animation: ai 1s forwards;}
+    .xd_bar_active{animation: xd 1s forwards;}
 
 
     @keyframes html {
@@ -263,6 +266,10 @@
     @keyframes ai {
         0%{width:0;}
         100%{width:35vw;}
+    }
+    @keyframes xd {
+        0%{width:0;}
+        100%{width:30vw;}
     }
     /* footer */
     .letter_wrap{

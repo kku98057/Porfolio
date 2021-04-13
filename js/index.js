@@ -1,5 +1,29 @@
 $(document).ready(function () {
 
+    // start_bg
+    startBg=()=>{
+        $('.start_bg').fadeOut(1000);
+    }
+    startBgColor=()=>{
+        $('.start_bg').css({
+            backgroundColor:'black'
+        }); 
+    }
+    helloWrap=()=>{
+        $('.hello_wrap').fadeOut();
+    }
+    welcomeWrap=()=>{
+        $('.welcome_wrap').fadeOut();
+    }
+    tomyWrap=()=>{
+        $('.tomy_wrap').fadeOut();
+    }
+    
+    setTimeout(startBg,7000);
+    setTimeout(helloWrap,1000);
+    setTimeout(welcomeWrap,2800);
+    setTimeout(tomyWrap,4500);
+    // setTimeout(startBgColor,4000);
 
     skillWrap = () => {
 
@@ -13,6 +37,7 @@ $(document).ready(function () {
                     $('.javascript_bar').addClass('javascript_bar_active');
                     $('.ps_bar').addClass('ps_bar_active');
                     $('.ai_bar').addClass('ai_bar_active');
+                    $('.xd_bar').addClass('xd_bar_active');
                 }
                 console.log($(window).scrollTop());
             });
@@ -26,6 +51,7 @@ $(document).ready(function () {
                     $('.javascript_bar').addClass('javascript_bar_active');
                     $('.ps_bar').addClass('ps_bar_active');
                     $('.ai_bar').addClass('ai_bar_active');
+                    $('.xd_bar').addClass('xd_bar_active');
                 }
                 console.log($(window).scrollTop());
             });

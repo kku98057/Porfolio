@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="port" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	
+	.st0{
+		fill:none;stroke:#000000;
+		stroke-dasharray:2355;
+		stroke-dashoffset:0;
+		opacity:0;
+		animation:dash 3s 3s linear forwards;
+		}
+
+	@keyframes dash{
+		0%{opacity:1;stroke-dashoffset:2355;}
+		100%{stroke-dashoffset:0;opacity:1;}
+	}
+</style>
+<g id="container">
+	<path id="p5" class="st0" d="M428.125,659.857v24.851H126.587v-24.851h134.636v-76.404H154.033v-24.479h50.813V449.932h-51.555
+		v-24.479h246.646v24.479h-51.555v109.043h50.813v24.479H292.007v76.404H428.125z M235.26,558.975h82.71V449.932h-82.71V558.975z"/>
+	<path id="p4" class="st0" d="M769.354,658.374v24.851H467.444v-24.851H769.354z M734.86,597.547H506.389V422.485h225.134v24.479
+		h-194.35v49.329h186.932v24.108H537.173v52.667H734.86V597.547z"/>
+	<path id="p3" class="st0" d="M1109.469,544.51v24.479H808.673V544.51H944.05v-31.897H837.974v-23.366h49.329v-63.423H836.86
+		v-23.366h244.05v23.366h-50.071v63.423h48.958v23.366H974.463v31.897H1109.469z M875.805,699.544h205.477v22.995H846.133v-77.146
+		h195.092v-27.446H845.021v-22.624h226.246v71.582H875.805V699.544z M917.716,489.247h82.71v-63.423h-82.71V489.247z"/>
+	<path id="p2" class="st0" d="M1199.972,620.914c54.521,0,103.479-2.597,161.71-11.869l2.968,24.851
+		c-60.085,10.014-110.527,12.239-167.645,12.239h-27.446V518.547h122.396v-69.357h-123.509v-24.85h154.293v118.687h-122.767V620.914
+		z M1423.251,393.185v333.435h-30.414V393.185H1423.251z"/>
+	<path id="p1" class="st0" d="M1793.408,658.374v25.221h-302.28v-25.221h135.377v-69.357c-61.939-4.45-105.705-37.46-105.705-86.418
+		c0-53.038,50.813-87.161,121.283-87.161c70.099,0,120.541,34.123,120.541,87.161c0,48.958-43.395,81.968-105.335,86.418v69.357
+		H1793.408z M1642.083,565.65c53.038,0,91.611-24.85,91.611-63.052s-38.573-63.052-91.611-63.052s-91.982,24.85-91.982,63.052
+		S1589.045,565.65,1642.083,565.65z"/>
+</g>
+</svg>
+.st0{
+		fill:none;
+		stroke:white;
+		stroke-dasharray:2355;
+		stroke-dashoffset:0;
+		opacity:0;
+		animation:dash 2s 4s linear forwards;
+		}
+
+	@keyframes dash{
+		0%{opacity:1;stroke-dashoffset:2355;stroke:white;}
+		100%{stroke-dashoffset:0;opacity:1;stroke:white;}
+	}
