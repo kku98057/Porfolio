@@ -63,6 +63,7 @@ $(document).ready(function () {
         let introOffset = $('.s1').offset().top,
             skillOffset = $('.s4').offset().top,
             portfolioOffset = $('.s2').offset().top,
+            portfolioMob = $('.s2_mob').offset().top,
             personalityOffset = $('.s3').offset().top,
             windowOffset = $(window).scrollTop(),
             windowWidth = $(window).width();
@@ -95,8 +96,9 @@ $(document).ready(function () {
             });
             $('.nav_portfolio').off('click').on('click', function () {
                 $('body, html').animate({
-                    scrollTop: portfolioOffset - 120,
+                    scrollTop: portfolioMob -120,
                 });
+                console.log(portfolioOffset);
             });
             $('.nav_personality').off('click').on('click', function () {
                 $('body, html').animate({
@@ -115,6 +117,7 @@ $(document).ready(function () {
         let introOffset = $('.s1').offset().top,
             skillOffset = $('.s4').offset().top,
             portfolioOffset = $('.s2').offset().top,
+            portfolioMob = $('.s2_mob').offset().top,
             personalityOffset = $('.s3').offset().top,
             windowOffset = $(window).scrollTop(),
             windowWidth = $(window).width();

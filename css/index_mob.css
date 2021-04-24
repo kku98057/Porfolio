@@ -120,6 +120,9 @@
         font-size: 0.9rem;
     }
     /* s2 */
+    .s2_pc{
+        display:none;
+    }
     .portfolio_wrap{
         padding:0 3.092%;
         
