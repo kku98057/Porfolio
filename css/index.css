@@ -2,12 +2,6 @@
     /* 공통 */
     body{
         font-family: 'Noto Sans KR', sans-serif;
-        animation:body 7s linear forwards;
-    }
-    @keyframes body{
-        0%{overflow-y:hidden;}
-        99%{overflow-y:hidden;}
-        100%{overflow-y:scroll;}
     }
     header,section,footer{
         width:100%;
@@ -17,7 +11,6 @@
         align-items: center;
         justify-content: center;
         margin:15px 0;
-    
     }
     .container{
         width:1250px;
@@ -134,7 +127,7 @@
         position: relative;
         overflow: hidden;
         transition: 0.5s;
-        filter:grayscale(1);
+        filter:grayscale(1); 
     }
     .gallery .gallery_list:last-child{
         border-right:3px solid white
@@ -145,13 +138,13 @@
         height:100%;
         position: absolute;
         top:0;
-    }
 
+    }
     .gallery .gallery_list:hover{
         flex:3;
         filter:grayscale(0);
     }
-    
+   
     .gallery .gallery_list:nth-child(1){
         background: url(../img/gallery_1.png) no-repeat center center;
     }
@@ -177,7 +170,7 @@
         text-align: center;
         width:97%;
         height:auto;
-        background-color:rgba(0,0,0,0.5);
+        background-color:rgb(61, 61, 61);
         color:white;
         padding:10px 1.5%;
         position: absolute;
@@ -185,10 +178,22 @@
         transition: 0.5s;
         left:0;
     }
+    .gallery_con:after{
+        content:'';
+        position: absolute;
+        width:50px;
+        height:50px;
+        background-color:rgb(61, 61, 61);
+        top:-10px;
+        left:50%;
+        margin-left:-25px;
+        transform:rotate(135deg);
+        z-index: -1;
+
+    }
     .gallery .gallery_list:hover .gallery_con{
         bottom:0;
         transition-delay: 0.2s;
-        
     }
     .gallery_con p{
         margin:10px 0;
