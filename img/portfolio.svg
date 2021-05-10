@@ -5,7 +5,7 @@
 <style type="text/css">
 	.st0{
 		fill:none;
-		stroke:white;;
+		stroke:#333;
 		stroke-dasharray:2355;
 		stroke-dashoffset:0;
 		opacity:0;
@@ -13,8 +13,8 @@
 		}
 
 	@keyframes dash{
-		0%{opacity:1;stroke-dashoffset:2355;stroke:white;}
-		100%{stroke-dashoffset:0;opacity:1;stroke:white;}
+		0%{opacity:1;stroke-dashoffset:2355;stroke:#333;}
+		100%{stroke-dashoffset:0;opacity:1;stroke:#333;}
 	}
 </style>
 <g id="container">

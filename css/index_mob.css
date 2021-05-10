@@ -1,8 +1,6 @@
 @media all and (max-width:860px){
     /* 공통 */
-    object{
-        display: none;
-    }
+
     body{
         font-family: 'Noto Sans KR', sans-serif;
     }
@@ -38,6 +36,13 @@
         box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
         font-weight:600;
         z-index:10;
+    }
+    .logo{
+        position: absolute;
+        top:5px;
+        left:0;
+        width:100px;
+        height:50px;
     }
     .nav_wrap li{
         margin-right:15px;
@@ -125,8 +130,16 @@
     }
     .portfolio_wrap{
         padding:0 3.092%;
-        
+        display: flex;
+        flex-direction: column;
     }
+    .portfolio_list:nth-child(1){order:1;}
+    .portfolio_list:nth-child(2){order:2;}
+    .portfolio_list:nth-child(3){order:3;}
+    .portfolio_list:nth-child(4){order:4;}
+    .portfolio_list:nth-child(5){order:7;}
+    .portfolio_list:nth-child(6){order:5;}
+    .portfolio_list:nth-child(7){order:6;}
     .portfolio_list:after{
         content:'';
         width:5px;

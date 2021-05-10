@@ -18,7 +18,24 @@
         position: relative;
         box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
     }
-    
+    /* start */
+    .start_bg{
+        width:100vw;
+        height:100vh;
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: white;
+        z-index:11;
+    }
+    .start_bg_active{
+        animation:startBg 2s forwards;
+    }
+    @keyframes startBg{
+        0%{opacity: 1;}
+        99%{opacity:0;z-index: 11;}
+        100%{z-index:-999;}
+    }
     /* header */
     .nav_wrap{
         font-family: 'Open Sans', sans-serif;
@@ -31,10 +48,24 @@
         justify-content: flex-end;
         align-items: center;
         font-size:14px;
-        
         box-shadow: 0 0 10px 2px rgba(0,0,0,0.5);
         font-weight:600;
-        z-index:10;
+        z-index:13;
+    }
+    .logo{
+        position: absolute;
+        top:-5px;
+        left:0;
+        width:150px;
+        height:50px;
+    }
+    .logo_active{
+        animation:logo 2s forwards;
+    }
+    @keyframes logo{
+        0%{width:100vw; height:100vh;}
+        60%{width:100vw; height:100vh;}
+        100%{width:150px; height:50px;}
     }
     .nav_wrap li{
         cursor: pointer;
@@ -68,6 +99,8 @@
     .title_small{
         font-size:1.2rem;
         font-weight:600;
+        transform-style: preserve-3d;
+        transform: translateZ(-190px);
     }
     .title_icon{
         font-size:1.2rem;
@@ -129,6 +162,13 @@
         transition: 0.5s;
         filter:grayscale(1); 
     }
+    .gallery .gallery_list:nth-child(1){order:1;}
+    .gallery .gallery_list:nth-child(2){order:2;}
+    .gallery .gallery_list:nth-child(3){order:3;}
+    .gallery .gallery_list:nth-child(4){order:4;}
+    .gallery .gallery_list:nth-child(5){order:7;}
+    .gallery .gallery_list:nth-child(6){order:5;}
+    .gallery .gallery_list:nth-child(7){order:6;}
     .gallery .gallery_list:last-child{
         border-right:3px solid white
     }
@@ -323,158 +363,7 @@
         0%{width:0;}
         100%{width:200px;}
     }
-    /* start_bg */
-    .start_bg{
-        width:100%;
-        height:100vh;
-        position: fixed;
-        top:0;
-        left:0;
-        z-index:999;
-        background-color: white;
-        animation:startbg 4s linear forwards;
-    }
-    @keyframes startbg{
-        0%{background-color: white;}
-        100%{background-color: black;}
-    }
-    .start_title{
-        width:100%;
-        height:100vh;
-        position: absolute;
-        top:0;
-        left:0;
-    }
-    .start_title h3{
-        position: absolute;
-        font-size:20rem;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-    }
-    /* hello */
-    .hello_h{animation:hello_h 1s 0.1s linear forwards;}
-    .hello_e{animation:hello_e 1s -0.2s linear forwards;}
-    .hello_l_1{animation:hello_l_1 1s 0.3s linear forwards;}
-    .hello_l_2{animation:hello_l_2 1s -0.2s linear forwards;}
-    .hello_o{animation:hello_o 1s 0.15s linear forwards;}
-    @keyframes hello_h{
-        0%{opacity: 0.1; color:#87a380;}
-        10%{opacity: 1;}
-        30%{opacity: 0;color:#daba63}
-        60%{opacity: 1;color:chocolate;}
-        90%{opacity: 0;color:#f87272}
-        100%{opacity: 1;}
-    }
-    @keyframes hello_e{
-        0%{opacity: 0.1;color:deeppink;}
-        10%{opacity: 0.2;}
-        30%{opacity: 0.5;color:indigo;}
-        60%{opacity: 1;color:cadetblue;}
-        90%{opacity: 0.7;color:bisque;}
-        100%{opacity: 1;}
-    }
-    @keyframes hello_l_1{
-        0%{opacity: 0.1;color:lightcoral;}
-        10%{opacity: 0.2;}
-        30%{opacity: 0.7;color:maroon;}
-        60%{opacity: 1;color:palevioletred;}
-        90%{opacity: 0.3;color:lightskyblue;}
-        100%{opacity: 1;}
-    }
-    @keyframes hello_l_2{
-        0%{opacity: 0.1;}
-        10%{opacity: 0.4; color:palevioletred;}
-        30%{opacity: 0.2;}
-        60%{opacity: 1;color:slateblue;}
-        90%{opacity: 0.7;color:darkred;}
-        100%{opacity: 1;}
-    }
-    @keyframes hello_o{
-        0%{opacity: 0.1;color:steelblue;}
-        10%{opacity: 0.5;color:violet;}
-        30%{opacity: 0.8;color:tomato;}
-        60%{opacity: 0.2;color:yellowgreen;}
-        90%{opacity: 0.9;color:wheat;}
-        100%{opacity: 1;}
-    }
-    /* welcome */
-
-    .welcome_w{animation:welcome_w 1s 1.2s linear forwards;opacity: 0;}
-    .welcome_e{animation:welcome_e 1s 1.3s linear forwards;opacity: 0;}
-    .welcome_l{animation:welcome_l 1s 1.4s linear forwards;opacity: 0;}
-    .welcome_c{animation:welcome_c 1s 1.5s linear forwards;opacity: 0;}
-    .welcome_o{animation:welcome_o 1s 1.6s linear forwards;opacity: 0;}
-    .welcome_m{animation:welcome_m 1s 1.7s linear forwards;opacity: 0;}
-    .welcome_e{animation:welcome_e 1s 1.8s linear forwards;opacity: 0;}
-    @keyframes welcome_w{
-        0%{opacity: 0.1;color:steelblue;}
-        10%{opacity: 0.5;color:violet;}
-        30%{opacity: 0.8;color:tomato;}
-        60%{opacity: 0.2;color:yellowgreen;}
-        90%{opacity: 0.9;color:wheat;}
-        100%{opacity: 1;}
-    }
-    @keyframes welcome_e{
-        0%{opacity: 0.1;color:steelblue;}
-        10%{opacity: 0.5;color:violet;}
-        30%{opacity: 0.8;color:tomato;}
-        60%{opacity: 0.2;color:yellowgreen;}
-        90%{opacity: 0.9;color:wheat;}
-        100%{opacity: 1;}
-    }
-    @keyframes welcome_l{
-        0%{opacity: 0.1;color:steelblue;}
-        10%{opacity: 0.5;color:violet;}
-        30%{opacity: 0.8;color:tomato;}
-        60%{opacity: 0.2;color:yellowgreen;}
-        90%{opacity: 0.9;color:wheat;}
-        100%{opacity: 1;}
-    }
-    @keyframes welcome_c{
-        0%{opacity: 0.1;color:steelblue;}
-        10%{opacity: 0.5;color:violet;}
-        30%{opacity: 0.8;color:tomato;}
-        60%{opacity: 0.2;color:yellowgreen;}
-        90%{opacity: 0.9;color:wheat;}
-        100%{opacity: 1;}
-    }
-    @keyframes welcome_o{
-        0%{opacity: 0.1;color:steelblue;}
-        10%{opacity: 0.5;color:violet;}
-        30%{opacity: 0.8;color:tomato;}
-        60%{opacity: 0.2;color:yellowgreen;}
-        90%{opacity: 0.9;color:wheat;}
-        100%{opacity: 1;}
-    }
-    @keyframes welcome_m{
-        0%{opacity: 0.1;color:steelblue;}
-        10%{opacity: 0.5;color:violet;}
-        30%{opacity: 0.8;color:tomato;}
-        60%{opacity: 0.2;color:yellowgreen;}
-        90%{opacity: 0.9;color:wheat;}
-        100%{opacity: 1;}
-    }
-    @keyframes welcome_e{
-        0%{opacity: 0.1;color:steelblue;}
-        10%{opacity: 0.5;color:violet;}
-        30%{opacity: 0.8;color:tomato;}
-        60%{opacity: 0.2;color:yellowgreen;}
-        90%{opacity: 0.9;color:wheat;}
-        100%{opacity: 1;}
-    }
-    /* tomy */
-
-    .tomy_to{animation:tomy_to 1s 3s linear forwards;opacity: 0;}
-    .tomy_my{animation:tomy_my 1s 3.5s linear forwards;opacity: 0;}
-    @keyframes tomy_to{
-        0%{opacity:1;}
-        100%{opacity: 1;color:white;}
-    }
-    @keyframes tomy_my{
-        0%{opacity:0;}
-        100%{opacity: 1;color:white;}
-    }
+    
     /* footer */
     .letter_wrap{
         padding:15px;

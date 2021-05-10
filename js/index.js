@@ -1,29 +1,5 @@
 $(document).ready(function () {
 
-    // start_bg
-    startBg=()=>{
-        $('.start_bg').fadeOut(1000);
-    }
-    startBgColor=()=>{
-        $('.start_bg').css({
-            backgroundColor:'black'
-        }); 
-    }
-    helloWrap=()=>{
-        $('.hello_wrap').fadeOut();
-    }
-    welcomeWrap=()=>{
-        $('.welcome_wrap').fadeOut();
-    }
-    tomyWrap=()=>{
-        $('.tomy_wrap').fadeOut();
-    }
-    
-    setTimeout(startBg,7000);
-    setTimeout(helloWrap,1000);
-    setTimeout(welcomeWrap,2800);
-    setTimeout(tomyWrap,4500);
-    // setTimeout(startBgColor,4000);
 
     skillWrap = () => {
 
@@ -57,6 +33,7 @@ $(document).ready(function () {
             });
         }
     }
+
     skillWrap();
     // 반응형 시 지역변수로 하지 않으면 리사이즈 시 바뀌는 값이 아닌 처음 값을 그대로 사용함
     scroll = () => {
@@ -89,6 +66,7 @@ $(document).ready(function () {
                 });
             });
         } else if (windowWidth < 860) {
+            
             $('.nav_intro').off('click').on('click', function () {
                 $('body, html').animate({
                     scrollTop: 0,
@@ -96,7 +74,7 @@ $(document).ready(function () {
             });
             $('.nav_portfolio').off('click').on('click', function () {
                 $('body, html').animate({
-                    scrollTop: portfolioMob -120,
+                    scrollTop: portfolioMob - 120,
                 });
                 console.log(portfolioOffset);
             });
@@ -123,6 +101,11 @@ $(document).ready(function () {
             windowWidth = $(window).width();
         scroll();
         skillWrap();
+        startBg = () => {
+            $('.start_bg').css({
+                display:'none'
+            });
+        }
     });
 
 
