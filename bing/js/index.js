@@ -10,6 +10,7 @@ $(document).ready(function () {
         })
     });
     // header
+
         // info
     $('.info_wrap .cart').hover(function(){
         $(this).find('img').stop().animate({

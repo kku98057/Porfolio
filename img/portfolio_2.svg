@@ -4,15 +4,15 @@
 	 viewBox="0 0 120 50" style="enable-background:new 0 0 120 50;" xml:space="preserve">
 <style type="text/css">
 	.st0{
-		stroke:#000000;
+		stroke:#333;
 		fill:none;
 		stroke-dasharray:85;
 		stroke-dashoffset:85;
-		animation:port 2s forwards;
+		animation:port 1.5s forwards;
 		}
 		@keyframes port{
-			0%{stroke:#333;stroke-dashoffset:85;fill:transparent;}
-			80%{fill:transparent;}
+			0%{stroke-dashoffset:85;fill:transparent;}
+			80%{stroke:#333;fill:transparent;stroke-dashoffset:0;}
 			100%{stroke:#333;stroke-dashoffset:0;fill:#333;}
 		}
 </style>

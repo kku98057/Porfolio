@@ -1,6 +1,17 @@
 $(document).ready(function () {
 
-
+            // logo
+    LOGO=()=>{
+        $('.logo').removeClass('logo_active')
+    }
+    setTimeout(LOGO,2500);
+    startBgRemove=()=>{
+        $('.start_bg').removeClass('start_bg_active');
+        $('.start_bg').css({
+            display:'none'
+        });
+    }
+    setTimeout(startBgRemove,2500);
     skillWrap = () => {
 
         if ($(window).width() > 860) {
@@ -101,11 +112,7 @@ $(document).ready(function () {
             windowWidth = $(window).width();
         scroll();
         skillWrap();
-        startBg = () => {
-            $('.start_bg').css({
-                display:'none'
-            });
-        }
+       
     });
 
 

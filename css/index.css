@@ -60,7 +60,7 @@
         height:50px;
     }
     .logo_active{
-        animation:logo 2s forwards;
+        animation:logo 2.5s forwards;
     }
     @keyframes logo{
         0%{width:100vw; height:100vh;}
