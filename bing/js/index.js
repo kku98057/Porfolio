@@ -1,41 +1,54 @@
 $(document).ready(function () {
     // present_hover
-    $('.present_wrap img').hover(function () {
-        $(this).attr({
-            src: 'img/present_ad_hover.png'
-        })
-    }, function () {
-        $(this).attr({
+    present = () => {
+        $('.present_wrap img').hover(function () {
+            $(this).attr({
+                src: 'img/present_ad_hover.png'
+            })
+        }, function () {
+            $(this).attr({
+                src: 'img/present_ad.png'
+            })
+        });
+    }
+    presentOn=()=>{
+        $('.present_wrap img').attr({
             src: 'img/present_ad.png'
-        })
-    });
+        });
+    }
+    presentOff=()=>{
+        $('.present_wrap img').attr({
+            src: ''
+        });
+    }
+    
     // header
-        // mob_menu
+    // mob_menu
     let bottomMenuNub = 0;
-    $('.bottom_menu_menu, .mob_menu_close_btn').click(function(){
-        if(bottomMenuNub==0){
-        $('.mob_menu_wrap').addClass('bottom_menu_active');
-        bottomMenuNub++;
-    }else{
-        $('.mob_menu_wrap, .mob_menu_close_btn').removeClass('bottom_menu_active');
-        bottomMenuNub=0;
-    };
+    $('.bottom_menu_menu, .mob_menu_close_btn').click(function () {
+        if (bottomMenuNub == 0) {
+            $('.mob_menu_wrap').addClass('bottom_menu_active');
+            bottomMenuNub++;
+        } else {
+            $('.mob_menu_wrap, .mob_menu_close_btn').removeClass('bottom_menu_active');
+            bottomMenuNub = 0;
+        };
     });
-        let mobNub = 0;
-    $('.mob_depth').each(function(index){
-        $(this).attr('mob_index',index);
+    let mobNub = 0;
+    $('.mob_depth').each(function (index) {
+        $(this).attr('mob_index', index);
     });
-    $('.mob_menu_list').each(function(index){
-        $(this).attr('mob_index',index);
-    }).click(function(){
+    $('.mob_menu_list').each(function (index) {
+        $(this).attr('mob_index', index);
+    }).click(function () {
 
         let mobMenu = $(this).attr('mob_index');
         $('.mob_depth').removeClass('mob_active');
         $('.mob_depth').eq(mobMenu).addClass('mob_active');
     });
 
-    
-        // info
+
+    // info
     $('.info_wrap .cart').hover(function () {
         $(this).find('img').stop().animate({
             opacity: 0,
@@ -64,11 +77,11 @@ $(document).ready(function () {
             $bodyOffset = $('body').offset().top,
             $footerOffset = $('footer').offset().top,
             scrollTop = $(this).scrollTop();
-        if ($headerOffset < scrollTop && scrollTop< $footerOffset - 900) {
+        if ($headerOffset < scrollTop && scrollTop < $footerOffset - 900) {
             $('.present_wrap').fadeIn(200);
-        }else if($headerOffset >= scrollTop){
+        } else if ($headerOffset >= scrollTop) {
             $('.present_wrap').fadeOut(200);
-        }else if(scrollTop >= 6100){
+        } else if (scrollTop >= 6100) {
             $('.present_wrap').fadeOut(200);
         }
         if (scrollTop > 53) {
@@ -100,7 +113,7 @@ $(document).ready(function () {
                 boxShadow: '0 1px 10px 5px rgba(0,0,0,0)'
             });
         }
-        
+
 
     });// scroll navbar end
 
@@ -370,15 +383,15 @@ $(document).ready(function () {
         }
     });
     // 자동슬라이드
-    rightTrigger=()=>{
+    rightTrigger = () => {
         $('.right_arrow').trigger('click');
-    }   
-
-    rightTriggerTimer=()=>{
-    setTimeout(rightTrigger);
     }
 
-    setInterval(rightTriggerTimer,5000);
+    rightTriggerTimer = () => {
+        setTimeout(rightTrigger);
+    }
+
+    setInterval(rightTriggerTimer, 5000);
 
     // 브랜드 리스트 버튼
     $('.brand_list_wrap').click(function () {
@@ -625,44 +638,67 @@ $(document).ready(function () {
             $('.kakao_img').attr({
                 src: 'img/sns_kakao_hover.png'
             });
+            $('.kakao_pop').css({
+                display: 'block'
+            });
             $('.kakao_pop').stop().animate({
-                opacity:1
-            },400);
+                opacity: 1,
+
+            }, 400);
         }, function () {
             $('.kakao_img').attr({
                 src: 'img/sns_kakao.png'
             });
             $('.kakao_pop').stop().animate({
-                opacity:0
-            },400);
+                opacity: 0,
+            }, 400);
+            $('.kakao_pop').css({
+                display: 'none'
+            });
         });// sns icon end
     }
-
+    kakaoStop = () => {
+        $('.kakao').hover(function () {
+            $('.kakao_img').attr({
+                src: 'img/sns_kakao_hover.png'
+            });
+            $('.kakao_pop').css({
+                display: 'none'
+            });
+        }, function () {
+            $('.kakao_img').attr({
+                src: 'img/sns_kakao.png'
+            });
+            $('.kakao_pop').css({
+                display: 'none'
+            });
+        });
+    }
     // init
-    
-    // newProLeft();
-    // newProRight();
-    // snsIcon();
-    // kakao();
+    present();
 
     // 반응형
     let $winWidth = $(window).width();
 
     if ($winWidth >= 1280) { //pc
-        snsIcon();
         newProLeft();
         newProRight();
-
+        snsIcon();
+        kakao();
+        presentOn();
     } else if ($winWidth < 768) { //mob
         newProLeft();
         newProRight();
-        $('.present_wrap img').attr({
-            src: ''
-        });
+        snsIcon();
+        kakaoStop();
+        presentOff();
+
     } else { //tab
         newProLeft();
         newProRight();
         snsIcon();
+        kakao();
+        presentOn();
     }
     //resize
     $(window).resize(function () {
@@ -672,42 +708,24 @@ $(document).ready(function () {
             $winWidth = $(window).width();
 
         if ($winWidth >= 1280) { //pc
-            snsIcon();
             newProLeft();
             newProRight();
-            $('.present_wrap img').attr({
-                src: 'img/present_ad.png'
-            });
+            snsIcon();
+            kakao();
+            presentOn();
 
         } else if ($winWidth < 768) { //mob
             newProLeft();
             newProRight();
-            $('.kakao').hover(function () {
-                $('.kakao_img').attr({
-                    src: 'img/sns_kakao_hover.png'
-                });
-                $('.kakao_pop').css({
-                    display:'none',
-                })
-            }, function () {
-                $('.kakao_img').attr({
-                    src: 'img/sns_kakao.png'
-                });
-                $('.kakao_pop').css({
-                    display:'none',
-                })
-            });
-            $('.present_wrap img').attr({
-                src: ''
-            });
-
+            snsIcon();
+            kakaoStop();
+            presentOff();
         } else { //tab
             newProLeft();
             newProRight();
             snsIcon();
-            $('.present_wrap img').attr({
-                src: 'img/present_ad.png'
-            });
+            kakao();
+            presentOn();
         }//resize end
         // 반응형 end
 

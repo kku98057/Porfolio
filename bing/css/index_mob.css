@@ -2260,7 +2260,7 @@
         font-weight: 900;
     }  
     .mob_menu .mob_menu_list:first-child{
-        margin-top:150px;
+        margin-top:50px
     }
     .mob_depth2{
         font-size:0.8rem;
@@ -2277,7 +2277,7 @@
         position: absolute;
         width:15px;
         height:20px;
-        top:8%;
+        top:55px;
         transform: rotate(180deg);
         left:40px;
     }

@@ -2277,7 +2277,7 @@ input,button{
     position: absolute;
     top:0;
     left:80px;
-    opacity: 0;
+    display: none;
 }
 footer{
     margin:0 1%;
