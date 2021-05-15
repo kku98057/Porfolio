@@ -2249,8 +2249,8 @@
     .mob_menu .mob_menu_list{
         transform: translateX(-50%);
         top: 0;
-        font-size: 1.5rem;
-        margin: 50px 0 0 50px;
+        font-size: 1rem;
+        margin: 30px 0 0 50px;
         position: relative;
         left: 50%;
     }
@@ -2275,9 +2275,9 @@
     }
     .mob_menu_close_btn{
         position: absolute;
-        width:15px;
-        height:20px;
-        top:55px;
+        width:10px;
+        height:15px;
+        top:50px;
         transform: rotate(180deg);
         left:40px;
     }
