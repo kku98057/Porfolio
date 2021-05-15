@@ -235,8 +235,13 @@
         bottom:0;
         transition-delay: 0.2s;
     }
+    
     .gallery_con p{
         margin:10px 0;
+    }
+    .gallery_con .prtfolio_date{
+        font-size:0.8rem;
+
     }
     .gallery_con .stack_list{
         display: flex;

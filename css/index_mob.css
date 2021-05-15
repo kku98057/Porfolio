@@ -178,6 +178,11 @@
         margin-top:15px;
         font-size:0.9rem;
     }
+    .portfolio_text_bottom .prtfolio_date{
+        font-size:0.8rem;
+        margin:5px 0;
+
+    }
     /* s3 */
     .persnality_wrap{
         padding:0 3.092%;
