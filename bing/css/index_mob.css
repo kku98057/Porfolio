@@ -2231,12 +2231,15 @@
         z-index: 9999;
         transition:0.4s;
     }
+    
     .bottom_menu_active{
         height:100vh;
     }
     .mob_menu{
         width:100%;
         height:100%;
+        display: flex;
+        flex-direction: column;
     }
     .mob_depth{
         height:0;
@@ -2245,6 +2248,7 @@
         margin-bottom:20px;
         margin-left:100px;
         transition:all 0.4s;
+
     }
     .mob_menu .mob_menu_list{
         transform: translateX(-50%);
@@ -2253,6 +2257,10 @@
         margin: 30px 0 0 50px;
         position: relative;
         left: 50%;
+        order:1;
+    }
+    .mob_menu .mob_menu_list_active{
+        order:0;
     }
     .mob_depth .mob_depth_list{
         margin-top:20px;
@@ -2260,7 +2268,7 @@
         font-weight: 900;
     }  
     .mob_menu .mob_menu_list:first-child{
-        margin-top:50px
+        margin-top:30px
     }
     .mob_depth2{
         font-size:0.8rem;
@@ -2277,7 +2285,7 @@
         position: absolute;
         width:10px;
         height:15px;
-        top:50px;
+        top:30px;
         transform: rotate(180deg);
         left:40px;
     }

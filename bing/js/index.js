@@ -34,6 +34,8 @@ $(document).ready(function () {
             bottomMenuNub++;
         } else {
             $('.mob_menu_wrap, .mob_menu_close_btn').removeClass('bottom_menu_active');
+            $('.mob_menu_list').removeClass('mob_menu_list_active');
+            $('.mob_depth').removeClass('mob_active');
             $('body').css({
                 overflowY:'scroll'
             });
@@ -51,6 +53,8 @@ $(document).ready(function () {
         let mobMenu = $(this).attr('mob_index');
         $('.mob_depth').removeClass('mob_active');
         $('.mob_depth').eq(mobMenu).addClass('mob_active');
+        $('.mob_menu_list').removeClass('mob_menu_list_active');
+        $('.mob_menu_list').eq(mobMenu).addClass('mob_menu_list_active');
     });
 
 
