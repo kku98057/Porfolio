@@ -51,10 +51,8 @@ $(document).ready(function () {
     }).click(function () {
 
         let mobMenu = $(this).attr('mob_index');
-        $('.mob_depth').removeClass('mob_active');
-        $('.mob_depth').eq(mobMenu).addClass('mob_active');
-        $('.mob_menu_list').removeClass('mob_menu_list_active');
-        $('.mob_menu_list').eq(mobMenu).addClass('mob_menu_list_active');
+        $('.mob_depth').eq(mobMenu).toggleClass('mob_active');
+        $('.mob_menu_list').eq(mobMenu).toggleClass('mob_menu_list_active');
     });
 
 
