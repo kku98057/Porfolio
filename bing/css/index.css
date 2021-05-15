@@ -1,3 +1,4 @@
+@media all and (min-width:1280px){
 /* 공통영역 */
 body{
     font-family: 'Roboto', sans-serif;
@@ -9,6 +10,11 @@ header,section{
     top:0;
     left:0;
     margin-bottom:50px;
+}
+.mob_banner_wrap,
+.bottom_menu_wrap,
+.mob_menu_wrap{
+    display: none;
 }
 .container{
     width:1280px;
@@ -25,6 +31,7 @@ header,section{
     bottom:10px;
     lefT:10px;
     z-index:999;
+    display: none;
 }
 /* header */
 header{
@@ -1028,6 +1035,7 @@ input,button{
     justify-content:space-between;
     align-items: center;
     border-bottom: 2px solid #666;
+    cursor: pointer;
 }
 .height_active{
     height:auto;
@@ -1218,6 +1226,14 @@ input,button{
     border-radius: 50px;
     margin-right:10px;
     transition: 0.4s;
+    position: relative;
+}
+.shop_btn_wrap .shop_btn_1 > a{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
 }
 .shop_wrap{
     position: relative;
@@ -1241,6 +1257,11 @@ input,button{
     width:120px;
     justify-content: space-between;
     padding-bottom:10px;
+}
+.shop_btn_2 a{
+    width:100%;
+    height:100%;
+    position: absolute;
 }
 .shop_btn_2:after{
     position: absolute;
@@ -1351,6 +1372,7 @@ input,button{
     align-items: center;
     position: relative;
 }
+
 .recommended_list:before{
     position: absolute;
     top:4px;
@@ -1720,6 +1742,11 @@ input,button{
     justify-content: space-between;
     margin-bottom:50px;
 }
+.review_drag{
+    font-size:0.8rem;
+    color:#b3b3b3;
+    margin-bottom:10px;
+}
 .reivew_title_con .title_wrap{
     padding:0;
     text-align: left;
@@ -2063,18 +2090,21 @@ input,button{
     height:50px;
     border-radius: 50px;
     background-color:#dfdfdf;
-    display: flex;
-    align-items: center;
     margin-right:10px;
     position: relative;
     color:white;
     transition: 0.4s;
 }
+.video_con .buy_btn > div a{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .video_con .buy_btn >div img{
     width:25px;
     height:25px;
-    position: relative;
-    left:12.5px;
 }
 .video_con .buy_btn > div p{
     transform: translateX(-50%);
@@ -2247,7 +2277,7 @@ input,button{
     position: absolute;
     top:0;
     left:80px;
-    display: none;
+    opacity: 0;
 }
 footer{
     margin:0 1%;
@@ -2358,4 +2388,6 @@ footer .container{
 }
 .copyright{
     color:#b3b3b3;
+}
+
 }

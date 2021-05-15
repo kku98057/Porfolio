@@ -2,7 +2,16 @@ $(document).ready(function () {
 
             // logo
     LOGO=()=>{
-        $('.logo').removeClass('logo_active')
+        $('.logo').removeClass('logo_active');
+    }
+    if($(window).width() < 861){
+        $('.logo').css({
+            display:'none'
+        });
+    }else{
+        $('.logo').css({
+            display:'block'
+        });
     }
     setTimeout(LOGO,2500);
     startBgRemove=()=>{
@@ -101,6 +110,7 @@ $(document).ready(function () {
             });
         }
     }
+
     scroll();
     $(window).resize(function () {
         let introOffset = $('.s1').offset().top,
@@ -112,11 +122,16 @@ $(document).ready(function () {
             windowWidth = $(window).width();
         scroll();
         skillWrap();
-       
+        if($(window).width() < 861){
+            $('.logo').css({
+                display:'none'
+            });
+        }else{
+            $('.logo').css({
+                display:'block'
+            });
+        }
     });
-
-
-
     // letter
     $('.letter_img').click(function () {
         $('.act_letter').addClass('letter_act');
