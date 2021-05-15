@@ -28,9 +28,15 @@ $(document).ready(function () {
     $('.bottom_menu_menu, .mob_menu_close_btn').click(function () {
         if (bottomMenuNub == 0) {
             $('.mob_menu_wrap').addClass('bottom_menu_active');
+            $('body').css({
+                overflowY:'hidden'
+            });
             bottomMenuNub++;
         } else {
             $('.mob_menu_wrap, .mob_menu_close_btn').removeClass('bottom_menu_active');
+            $('body').css({
+                overflowY:'scroll'
+            });
             bottomMenuNub = 0;
         };
     });
