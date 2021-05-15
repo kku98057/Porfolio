@@ -2357,7 +2357,7 @@
         width:98%;
         background-color: #f3f3f3;
         border-radius: 30px;
-        margin-bottom:80px;
+        margin-bottom:60px;
     }
     footer .container{
         padding:40px 0;
@@ -2376,8 +2376,8 @@
         background:url(../img/footer_logo.png) no-repeat center center;
         width:146px;
         height:54px;
-        right:30px;
-        bottom:-270px;
+        left:0;
+        bottom:-60px
     }
     .company_intro_wrap > li{
         font-size:0.9rem;
@@ -2408,7 +2408,7 @@
         padding:20px 0;
         order:1;
         width:99%;
-        margin-left:2%
+        margin: 70px 0 0 2%;
     }
     .commpany_info_wrap li{
         margin-right:10px;
